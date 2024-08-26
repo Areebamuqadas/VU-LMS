@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VU sign up</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <style>
+        .container {
+            height: 110vh;
+            display: flex;
+        }
+
+        .left-content {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+        }
+
+        .logo {
+            padding-top: 65px;
+        }
+
+        .form {
+            margin-top: 60px;
+            margin-right: 50px;
+        }
+
+        .form input {
+            border: 2px solid #ebedf2;
+            width: 100%;
+            padding: 14px 14px;
+            font-size: 16px;
+            font-family: sans-serif, Arial;
+            margin-top: 14px;
+        }
+
+        .form p {
+            padding-top: 2px;
+        }
+
+        button {
+            border-radius: 28px;
+            border: none;
+            padding: 16px 38px;
+            font-size: 17px;
+            font-weight: bold;
+            background-color: blue;
+            color: white;
+            margin-left: 55px;
+        }
+
+        .icons {
+            padding-top: 55px;
+            padding-right: 110px;
+            cursor: pointer;
+        }
+
+        .check {
+            color: red;
+            font-weight: bold;
+            animation-duration: 1000ms;
+            animation-name: blink;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes blink {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
+        .right-content {
+            background-image: url(assets/background.jpg);
+            background-size: cover;
+            background-position: center;
+            width: 70%;
+            text-align: center;
+        }
+
+        .right-content h2 {
+            padding-top: 90px;
+            color: white;
+            font-size: 45px;
+            display: block;
+            font-weight: 500;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .right-content h3 {
+            color: white;
+            padding: 20px 8px;
+            font-size: 22px;
+        }
+
+        .footer {
+            height: 10vh;
+            display: flex;
+        }
+
+        .footer-icons {
+            padding-top: 24px;
+        }
+
+        .footer-mid {
+            text-align: center;
+            padding: 24px 215px;
+        }
+
+        .footer-anchor a {
+            padding: 12px 2px;
+            display: flex;
+            font-size: 48px;
+        }
+
+        @media only screen and (max-width: 980px) {
+            .container {
+                flex-direction: column-reverse;
+            }
+
+            .left-content {
+                width: 100%;
+                height: 100vh;
+            }
+
+            .right-content {
+                background-image: url(./Images/VU\ BG.png);
+                width: 100%;
+                height: 30vh;
+            }
+
+            .footer {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-content">
+            <div class="logo">
+                <img src="/assets/lms.jpg" alt="LMS">
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Student ID"><br>
+                <input type="password" placeholder="Password"><br>
+                <p>Forgot Password ?</p>
+                <button>Sign in</button>
+            </div>
+            <div class="icons">
+                <span class="check"><i class="bi bi-calendar3"></i>Check Your Datesheet</span><br><br>
+                <span><i class="bi bi-bell"></i>Notice Board</span><br><br>
+                <span><i class="bi bi-book"></i>Student Hand Book</span>
+            </div>
+        </div>
+        <div class="right-content">
+            <h2>Learning Management System</h2>
+            <h3>"The weak can never forgive. Forgiveness
+                is the attribute of the strong. (Mahatma Gandhi)"</h3>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="assets/vu.jpg" alt="vu">
+        <img src="assets/image.jpg" alt="govt">
+        <span class="footer-icons"><i class="bi bi-telephone"></i>Contact Us</span>
+        <span class="footer-icons"><i class="bi bi-patch-question"></i>Help</span>
+        <div class="footer-mid">
+            <a href="http://www.vu.edu.pk/"><i class="bi bi-cc-circle"></i>2020 IT Department, Virtual University of
+                Pakistan.</a>
+        </div>
+        <span class="footer-anchor"><a href="https://www.facebook.com/VirtualUniversityOfPakistan"><i
+                    class="bi bi-facebook"></i></a></span>
+        <span class="footer-anchor"><a href="https://twitter.com/VUPakistan"><i class="bi bi-twitter"></i></a></span>
+    </div>
+</body>
+
+</html>
